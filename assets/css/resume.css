@@ -108,6 +108,10 @@
   height: calc(100% - 115px);
   padding: 5px 25px;
 }
+.content p {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 .footer {
   background-color: #fcf8d1;
