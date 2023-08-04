@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
+.mouse .pointer1 {
+  z-index: 9999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1.5rem;
+  height: 1.5rem;
+  background: transparent;
+  border: 3px solid #90ebd8;
+  border-radius: 50%;
+  pointer-events: none;
+  box-sizing: border-box;
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+}
+.mouse .circle {
+  animation: animate-circle 0.5s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes animate-circle {
+  0% {
+    background: transparent;
+    border: 3px solid #90ebd8;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  100% {
+    background: #90ebd8;
+    border: 0px solid #90ebd8;
+    width: calc(1.5rem - 6px);
+    height: calc(1.5rem - 6px);
+  }
+}
+.mouse .ring {
+  animation: animate-ring 0.25s linear;
+  animation-fill-mode: forwards;
+}
+@keyframes animate-ring {
+  0% {
+    background: #90ebd8;
+    border: 0px solid #90ebd8;
+    width: calc(1.5rem - 6px);
+    height: calc(1.5rem - 6px);
+  }
+  100% {
+    background: transparent;
+    border: 3px solid #90ebd8;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+.mouse .pointer2 {
+  z-index: 9998;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #e88888;
+  border: 2px solid #e88888;
+  border-radius: 50%;
+  pointer-events: none;
+  box-sizing: border-box;
+  transition: 0.15s;
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+}
+
+.header {
+  background-color: #fcf8d1;
+  border-top: 5px solid #e2debb;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+}
+.header svg.logo {
+  margin-top: 19px;
+  height: 50px;
+}
+.header svg.logo g {
+  stroke: none;
+}
+.header svg.logo g path:hover {
+  cursor: pointer;
+}
+.header svg.logo g path.m {
+  fill: #90ebd8;
+}
+.header svg.logo g path.m:hover {
+  fill: #0b5576;
+}
+.header svg.logo g path.g {
+  fill: #e88888;
+}
+.header svg.logo g path.g:hover {
+  fill: #2c0847;
+}
+
+.content {
+  height: calc(100% - 115px);
+  padding: 5px 25px;
+}
+
+.footer {
+  background-color: #fcf8d1;
+  border-bottom: 5px solid #e2debb;
+  border-top: 10px solid #81d3c2;
+  outline: 5px solid #90ebd8;
+  outline-offset: 0px;
+  position: fixed;
+  height: 30px;
+  width: 100%;
+  bottom: 0;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer p {
+  color: #094c6a;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer p > span.love {
+  color: #e88888;
+  display: inline-block;
+  position: relative;
+  transform: scale(0.9);
+  animation: love 0.5s infinite linear alternate-reverse;
+}
+@keyframes love {
+  to {
+    transform: scale(1.2);
+    color: #d07a7a;
+  }
+}
+
+html * {
+  cursor: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  color: #2c0847;
+  font-family: "Source Sans 3", sans-serif;
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+::-moz-selection {
+  color: #e88888;
+  background: #90ebd8;
+}
+
+::selection {
+  color: #e88888;
+  background: #90ebd8;
+}/*# sourceMappingURL=resume.css.map */

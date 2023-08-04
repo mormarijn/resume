@@ -1,0 +1,46 @@
+@import "variables";
+@import "mixins";
+
+.mouse {  
+    .pointer1 {
+        z-index: 9999;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1.5rem;
+        height: 1.5rem;
+        background: transparent;
+        border: 3px solid $colour-lbem-2;
+        border-radius: 50%;
+        pointer-events: none;
+        box-sizing: border-box;
+        transition: 0.1s;
+        -webkit-transition: 0.1s;
+        -moz-transition: 0.1s;
+    }
+
+    .circle {
+        @include circle-animation(1.5rem, calc(1.5rem - 6px), $colour-lbem-2, 0.5s);
+    }
+
+    .ring {
+        @include ring-animation(calc(1.5rem - 6px), 1.5rem, $colour-lbem-2, 0.25s);
+    }
+
+    .pointer2 {
+        z-index: 9998;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: $colour-lbem-3;
+        border: 2px solid $colour-lbem-3;
+        border-radius: 50%;
+        pointer-events: none;
+        box-sizing: border-box;
+        transition: 0.15s;
+        -webkit-transition: 0.15s;
+        -moz-transition: 0.15s;
+    }
+}

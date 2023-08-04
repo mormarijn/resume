@@ -1,0 +1,35 @@
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+
+.footer {
+    background-color: $colour-lbem-1;
+    border-bottom: 5px solid $colour-lbem-1d;
+    border-top: 10px solid $colour-lbem-2d;
+    outline: 5px solid $colour-lbem-2;
+    outline-offset: 0px;
+    position: fixed;
+    height: 30px;
+    width: 100%;
+    bottom: 0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        color: $colour-lbem-4d;
+        font-size: 14px;
+        font-weight: 400;
+
+        > span.love {
+            color: $colour-lbem-3;
+            display: inline-block;
+            position: relative;
+            -webkit-transform: scale(.9);
+            -moz-transform: scale(.9);
+            transform: scale(.9);
+            @include love-animation($colour-lbem-3d);
+          }
+    }
+}

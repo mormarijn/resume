@@ -1,0 +1,44 @@
+@import 'fonts';
+@import 'variables';
+
+.header {
+    background-color: $colour-lbem-1;
+    border-top: 5px solid $colour-lbem-1d;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+
+    svg.logo {
+        margin-top: 19px;
+        height: 50px;
+
+        g {
+            stroke: none;
+
+            path {
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &.m {
+                    fill: $colour-lbem-2;
+
+                    &:hover {
+                        fill: $colour-lbem-4;
+                    }
+                }
+
+                &.g {
+                    fill: $colour-lbem-3;
+
+                    &:hover {
+                        fill: $colour-lbem-5;
+                    }
+                }
+            }
+        }
+    }
+}

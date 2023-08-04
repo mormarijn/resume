@@ -1,0 +1,140 @@
+@mixin circle-animation($size1, $size2, $colour, $duration) {
+    @keyframes animate-circle {
+        0% {
+            background: transparent;
+            border: 3px solid $colour;
+            width: $size1;
+            height: $size1;
+        }
+
+        100% {
+            background: $colour;
+            border: 0px solid $colour;
+            width: $size2;
+            height: $size2;
+        }
+    }
+
+    @-webkit-keyframes animate-circle {
+        0% {
+            background: transparent;
+            border: 3px solid $colour;
+            width: $size1;
+            height: $size1;
+        }
+
+        100% {
+            background: $colour;
+            border: 0px solid $colour;
+            width: $size2;
+            height: $size2;
+        }
+    }
+
+    @-moz-keyframes animate-circle {
+        0% {
+            background: transparent;
+            border: 3px solid $colour;
+            width: $size1;
+            height: $size1;
+        }
+
+        100% {
+            background: $colour;
+            border: 0px solid $colour;
+            width: $size2;
+            height: $size2;
+        }
+    }
+
+    -webkit-animation: animate-circle $duration linear;
+    -moz-animation: animate-circle $duration linear;
+    animation: animate-circle $duration linear;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@mixin ring-animation($size1, $size2, $colour, $duration) {
+    @keyframes animate-ring {
+        0% {
+            background: $colour;
+            border: 0px solid $colour;
+            width: $size1;
+            height: $size1;
+        }
+
+        100% {
+            background: transparent;
+            border: 3px solid $colour;
+            width: $size2;
+            height: $size2;
+        }
+    }
+
+    @-webkit-keyframes animate-ring {
+        0% {
+            background: $colour;
+            border: 0px solid $colour;
+            width: $size1;
+            height: $size1;
+        }
+
+        100% {
+            background: transparent;
+            border: 3px solid $colour;
+            width: $size2;
+            height: $size2;
+        }
+    }
+
+    @-moz-keyframes animate-ring {
+        0% {
+            background: $colour;
+            border: 0px solid $colour;
+            width: $size1;
+            height: $size1;
+        }
+
+        100% {
+            background: transparent;
+            border: 3px solid $colour;
+            width: $size2;
+            height: $size2;
+        }
+    }
+
+    -webkit-animation: animate-ring $duration linear;
+    -moz-animation: animate-ring $duration linear;
+    animation: animate-ring $duration linear;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@mixin love-animation($colour) {
+    @keyframes love {
+        to {
+            transform: scale(1.2);
+            color: $colour;
+        }
+    }
+
+    @-webkit-keyframes love {
+        to {
+            -webkit-transform: scale(1.2);
+            color: $colour;
+        }
+    }
+
+    @-moz-keyframes love {
+        to {
+            -moz-transform: scale(1.2);
+            color: $colour;
+        }
+    }
+
+    -webkit-animation: love .5s infinite linear alternate-reverse;
+    -moz-animation: love .5s infinite linear alternate-reverse;
+    animation: love .5s infinite linear alternate-reverse;
+}

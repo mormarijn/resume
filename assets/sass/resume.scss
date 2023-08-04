@@ -1,0 +1,34 @@
+@import 'fonts';
+@import 'variables';
+@import "mouse";
+@import 'header';
+@import 'content';
+@import 'footer';
+
+html * {
+    cursor: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    color: $colour-lbem-5;
+    font-family: $font-family-sourcesans;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: $font-family-ubuntu;
+}
+
+::-moz-selection {
+    color: $colour-lbem-3;
+    background: $colour-lbem-2;
+}
+
+::selection {
+    color: $colour-lbem-3;
+    background: $colour-lbem-2;
+}
