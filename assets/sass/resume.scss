@@ -7,6 +7,9 @@
 
 html * {
     cursor: none;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(calc(100vh - ($footer-height + 2 * $padding-y)));
+    scroll-snap-type: y mandatory;
 }
 
 html, body {

@@ -3,10 +3,32 @@
 
 .content {
     height: calc(100% - 115px);
-    padding: 5px 25px;
+    padding-left: $padding-x;
+    padding-right: $padding-x;
+    overflow-x: hidden;
+    overflow-y: auto;
 
-    p {
-        text-align: justify;
-        text-justify: inter-word;
+    &::-webkit-scrollbar {
+        width: 5px;        
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $colour-lbem-2;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $colour-lbem-3; 
+    }
+
+    section {
+        padding-top: $padding-y;
+        padding-bottom: $padding-y;
+        height: calc(100vh - ($footer-height + 2 * $padding-y));
+        scroll-snap-align: start;
+
+        p {
+            text-align: justify;
+            text-justify: inter-word;
+        }
     }
 }
