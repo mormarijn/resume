@@ -138,3 +138,15 @@
     -moz-animation: love .5s infinite linear alternate-reverse;
     animation: love .5s infinite linear alternate-reverse;
 }
+
+@mixin bg($name, $colour, $alpha) {
+    .bg-#{$name} {
+        background: rgba($colour, calc($alpha/100));
+    }
+}
+
+@mixin clr($name, $colour) {
+    .clr-#{$name} {
+        color: $colour;
+    }
+}

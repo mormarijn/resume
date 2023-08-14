@@ -1,10 +1,10 @@
 @import 'fonts';
 @import 'variables';
+@import 'mixins';
 
 .content {
-    height: calc(100% - 115px);
-    padding-left: $padding-x;
-    padding-right: $padding-x;
+    color: $colour-lbem-5;
+    height: calc(100% - $footer-height);
     overflow-x: hidden;
     overflow-y: auto;
 
@@ -21,8 +21,7 @@
     }
 
     section {
-        padding-top: $padding-y;
-        padding-bottom: $padding-y;
+        padding: $padding-y $padding-x;
         height: calc(100vh - ($footer-height + 2 * $padding-y));
         scroll-snap-align: start;
 
@@ -32,3 +31,18 @@
         }
     }
 }
+
+// backgrounds
+$bg-alpha: 25;
+@include bg(lbem-1, $colour-lbem-1, $bg-alpha);
+@include bg(lbem-2, $colour-lbem-2, $bg-alpha);
+@include bg(lbem-3, $colour-lbem-3, $bg-alpha);
+@include bg(lbem-4, $colour-lbem-4, $bg-alpha);
+@include bg(lbem-5, $colour-lbem-5, $bg-alpha);
+
+// colours
+@include clr(lbem-1, $colour-lbem-1);
+@include clr(lbem-2, $colour-lbem-2);
+@include clr(lbem-3, $colour-lbem-3);
+@include clr(lbem-4, $colour-lbem-4);
+@include clr(lbem-5, $colour-lbem-5);
