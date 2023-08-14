@@ -150,3 +150,17 @@
         color: $colour;
     }
 }
+
+@mixin heading($colour) {
+    &:after {
+        content: "";
+        position: absolute;
+        left: -1vmin;
+        top: 50%;
+        transform: translateY(-50%) rotate(-9deg);
+        width: 18vmin;
+        height: 120%;
+        background: $colour;
+        z-index: -1;
+    }
+}

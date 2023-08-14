@@ -32,8 +32,13 @@
     }
 }
 
+h1 {
+    color: $colour-lbem-3;
+    position: relative;
+    @include heading($colour-lbem-2);
+}
+
 // backgrounds
-$bg-alpha: 25;
 @include bg(lbem-1, $colour-lbem-1, $bg-alpha);
 @include bg(lbem-2, $colour-lbem-2, $bg-alpha);
 @include bg(lbem-3, $colour-lbem-3, $bg-alpha);

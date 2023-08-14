@@ -129,6 +129,22 @@
   text-justify: inter-word;
 }
 
+h1 {
+  color: #e88888;
+  position: relative;
+}
+h1:after {
+  content: "";
+  position: absolute;
+  left: -1vmin;
+  top: 50%;
+  transform: translateY(-50%) rotate(-9deg);
+  width: 18vmin;
+  height: 120%;
+  background: #90ebd8;
+  z-index: -1;
+}
+
 .bg-lbem-1 {
   background: rgba(252, 248, 209, 0.25);
 }
