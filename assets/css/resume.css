@@ -8,10 +8,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 25px;
+  height: 25px;
   background: transparent;
-  border: 3px solid #90ebd8;
+  border: 5px solid #90ebd8;
   border-radius: 50%;
   pointer-events: none;
   box-sizing: border-box;
@@ -71,6 +71,35 @@
   -moz-transition: 0.15s;
 }
 
+#scroll-to-top {
+  z-index: 1;
+  position: fixed;
+  bottom: 85px;
+  right: 25px;
+  width: 25px;
+  height: 25px;
+  display: none;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #90ebd8;
+}
+#scroll-to-top:hover {
+  background-color: #81d3c2;
+}
+#scroll-to-top i {
+  color: #e88888;
+  margin: 0;
+  position: relative;
+  left: 6px;
+  top: 5px;
+}
+#scroll-to-top i:hover {
+  top: 0;
+}
+#scroll-to-top .transition {
+  transition: all 1s ease;
+}
+
 .header {
   background-color: #fcf8d1;
   border-top: 5px solid #e2debb;
@@ -95,13 +124,13 @@
   fill: #90ebd8;
 }
 .header svg.logo g path.m:hover {
-  fill: #0b5576;
+  fill: #81d3c2;
 }
 .header svg.logo g path.g {
   fill: #e88888;
 }
 .header svg.logo g path.g:hover {
-  fill: #2c0847;
+  fill: #d07a7a;
 }
 
 .content {
@@ -109,6 +138,7 @@
   height: calc(100% - 115px);
   overflow-x: hidden;
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
 .content::-webkit-scrollbar {
   width: 5px;
@@ -237,6 +267,11 @@ body {
 
 h1, h2, h3, h4 {
   font-family: "Ubuntu", sans-serif;
+}
+
+i {
+  align-self: center;
+  font-size: 14px;
 }
 
 ::-moz-selection {

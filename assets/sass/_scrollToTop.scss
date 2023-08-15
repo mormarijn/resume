@@ -1,0 +1,38 @@
+@import 'variables';
+
+#scroll-to-top {
+    z-index: 1;
+    position: fixed;
+    bottom: $footer-height + $padding-x;
+    right: $padding-x;
+    width: $padding-x;
+    height: $padding-x;
+    display: none;
+    text-decoration: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: $colour-lbem-2;
+
+    &:hover {
+        background-color: $colour-lbem-2d;
+    }
+
+    i {
+        color: $colour-lbem-3;
+        margin: 0;
+        position: relative;
+        left: 6px;
+        top: $padding-y;
+
+        &:hover {
+            top: 0;
+        }
+    }
+
+    .transition {
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        transition: all 1s ease;
+    }
+}

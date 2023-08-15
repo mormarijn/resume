@@ -4,9 +4,10 @@
 
 .content {
     color: $colour-lbem-5;
-    height: calc(100% - $footer-height);
+    height: calc(100% - ($header-height + $footer-height));
     overflow-x: hidden;
     overflow-y: auto;
+    scroll-behavior: smooth;
 
     &::-webkit-scrollbar {
         width: 5px;        
@@ -22,7 +23,7 @@
 
     section {
         padding: $padding-y $padding-x;
-        height: calc(100vh - ($footer-height + 2 * $padding-y));
+        height: calc(100vh - ($header-height + $footer-height + 2 * $padding-y));
         scroll-snap-align: start;
 
         p {

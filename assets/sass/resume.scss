@@ -1,6 +1,7 @@
 @import 'fonts';
 @import 'variables';
-@import "mouse";
+@import 'mouse';
+@import 'scrollToTop';
 @import 'header';
 @import 'content';
 @import 'footer';
@@ -8,7 +9,7 @@
 html * {
     cursor: none;
     scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(calc(100vh - ($footer-height + 2 * $padding-y)));
+    scroll-snap-points-y: repeat(calc(100vh - ($header-height + $footer-height + 2 * $padding-y)));
     scroll-snap-type: y mandatory;
 }
 
@@ -23,6 +24,11 @@ body {
 
 h1, h2, h3, h4 {
     font-family: $font-family-ubuntu;
+}
+
+i {
+    align-self: center;
+    font-size: 14px;
 }
 
 ::-moz-selection {

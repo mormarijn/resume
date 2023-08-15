@@ -4,15 +4,15 @@
 
 .footer {
     background-color: $colour-lbem-1;
-    border-bottom: 5px solid $colour-lbem-1d;
-    border-top: 10px solid $colour-lbem-2d;
-    outline: 5px solid $colour-lbem-2;
+    border-bottom: $padding-y solid $colour-lbem-1d;
+    border-top: calc(2 * $padding-y) solid $colour-lbem-2d;
+    outline: $padding-y solid $colour-lbem-2;
     outline-offset: 0px;
     position: fixed;
     height: 30px;
     width: 100%;
     bottom: 0;
-    padding: 5px;
+    padding: $padding-y;
     display: flex;
     align-items: center;
     justify-content: center;

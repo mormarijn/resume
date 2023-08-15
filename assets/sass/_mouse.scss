@@ -8,10 +8,10 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 1.5rem;
-        height: 1.5rem;
+        width: $padding-x;
+        height: $padding-x;
         background: transparent;
-        border: 3px solid $colour-lbem-2;
+        border: $padding-y solid $colour-lbem-2;
         border-radius: 50%;
         pointer-events: none;
         box-sizing: border-box;
