@@ -1,10 +1,15 @@
 @import 'variables';
 
+.tags {
+    width: calc(100vw - (2 * $padding-x));
+    margin-right: calc(2 * $padding-x);
+}
+
 .tag {
     border-radius: 4px;
     display: inline-block;
     font-family: $font-family-poppins;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     padding: $padding-y calc(2 * $padding-y);
     margin: $padding-y calc($padding-y / 2);

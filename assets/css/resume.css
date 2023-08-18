@@ -231,11 +231,16 @@ h1:after {
   color: #2c0847;
 }
 
+.tags {
+  width: calc(100vw - 50px);
+  margin-right: 50px;
+}
+
 .tag {
   border-radius: 4px;
   display: inline-block;
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   padding: 5px 10px;
   margin: 5px 2.5px;
