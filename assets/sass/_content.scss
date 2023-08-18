@@ -25,6 +25,7 @@
         padding: $padding-y $padding-x;
         height: calc(100vh - ($header-height + $footer-height + 2 * $padding-y));
         scroll-snap-align: start;
+        overflow-x: auto;
 
         p {
             text-align: justify;
