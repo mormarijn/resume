@@ -3,10 +3,10 @@
 @import 'mixins';
 
 .footer {
-    background-color: $colour-lbem-1;
-    border-bottom: $padding-y solid $colour-lbem-1d;
-    border-top: calc(2 * $padding-y) solid $colour-lbem-2d;
-    outline: $padding-y solid $colour-lbem-2;
+    background-color: $color-lbem-1;
+    border-bottom: $padding-y solid $color-lbem-1d;
+    border-top: calc(2 * $padding-y) solid $color-lbem-2d;
+    outline: $padding-y solid $color-lbem-2;
     outline-offset: 0px;
     position: fixed;
     height: 30px;
@@ -18,18 +18,18 @@
     justify-content: center;
 
     p {
-        color: $colour-lbem-4d;
+        color: $color-lbem-4d;
         font-size: 14px;
         font-weight: 400;
 
         > span.love {
-            color: $colour-lbem-3;
+            color: $color-lbem-3;
             display: inline-block;
             position: relative;
             -webkit-transform: scale(.9);
             -moz-transform: scale(.9);
             transform: scale(.9);
-            @include love-animation($colour-lbem-3d);
+            @include love-animation($color-lbem-3d);
           }
     }
 }

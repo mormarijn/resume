@@ -4,6 +4,7 @@
 @import 'scrollToTop';
 @import 'header';
 @import 'content';
+@import 'tags';
 @import 'footer';
 
 html * {
@@ -26,17 +27,21 @@ h1, h2, h3, h4 {
     font-family: $font-family-ubuntu;
 }
 
+a, a:visited {
+    text-decoration: none;
+}
+
 i {
     align-self: center;
     font-size: 14px;
 }
 
 ::-moz-selection {
-    color: $colour-lbem-3;
-    background: $colour-lbem-2;
+    color: $color-lbem-3;
+    background: $color-lbem-2;
 }
 
 ::selection {
-    color: $colour-lbem-3;
-    background: $colour-lbem-2;
+    color: $color-lbem-3;
+    background: $color-lbem-2;
 }

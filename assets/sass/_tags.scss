@@ -1,0 +1,73 @@
+@import 'variables';
+
+.tag {
+    border-radius: 4px;
+    display: inline-block;
+    font-family: $font-family-poppins;
+    font-size: 16px;
+    font-weight: 600;
+    padding: $padding-y calc(2 * $padding-y);
+    margin: $padding-y calc($padding-y / 2);
+    text-transform: lowercase;
+    background-color: $color-lbem-4;
+    color: $color-lbem-1;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+    opacity: 0.75;
+
+    &:hover {
+        background-color: $color-lbem-1;
+        color: $color-lbem-4;
+        border-color: $color-lbem-4;
+        opacity: 1;
+    }
+
+    i {
+        font-size: 16px;
+        margin-right: 2px;
+        vertical-align: middle;
+    }
+
+    &.tag-gender {
+        $color-gender: #01a6ea;
+        background-color: $color-gender;
+        color: white;
+
+        &:hover {
+            background-color: white;
+            color: $color-gender;
+            border-color: $color-gender;
+        }
+    }
+
+    &.tag-netherlands {
+        $color-netherlands: #e17000;
+        background-color: $color-netherlands;
+        color: white;
+
+        &:hover {
+            background-color: white;
+            color: $color-netherlands;
+            border-color: $color-netherlands;
+        }
+    }
+
+    &.tag-email {
+        background-color: $color-lbem-3;
+        color: $color-lbem-5;
+
+        &:hover {            
+            background-color: $color-lbem-5;
+            color: $color-lbem-3;
+            border-color: $color-lbem-3;
+        }
+
+        &::after {
+            content: 'email';
+        }
+    
+        &:hover::after {
+            content: 'marijngrootjans@gmail.com';
+        }
+    }
+}

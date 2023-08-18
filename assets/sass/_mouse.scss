@@ -1,5 +1,5 @@
-@import "variables";
-@import "mixins";
+@import 'variables';
+@import 'mixins';
 
 .mouse {  
     .pointer1 {
@@ -11,7 +11,7 @@
         width: $padding-x;
         height: $padding-x;
         background: transparent;
-        border: $padding-y solid $colour-lbem-2;
+        border: $padding-y solid $color-lbem-2;
         border-radius: 50%;
         pointer-events: none;
         box-sizing: border-box;
@@ -21,11 +21,11 @@
     }
 
     .circle {
-        @include circle-animation(1.5rem, calc(1.5rem - 6px), $colour-lbem-2, 0.5s);
+        @include circle-animation(1.5rem, calc(1.5rem - 6px), $color-lbem-2, 0.5s);
     }
 
     .ring {
-        @include ring-animation(calc(1.5rem - 6px), 1.5rem, $colour-lbem-2, 0.25s);
+        @include ring-animation(calc(1.5rem - 6px), 1.5rem, $color-lbem-2, 0.25s);
     }
 
     .pointer2 {
@@ -34,8 +34,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: $colour-lbem-3;
-        border: 2px solid $colour-lbem-3;
+        background: $color-lbem-3;
+        border: 2px solid $color-lbem-3;
         border-radius: 50%;
         pointer-events: none;
         box-sizing: border-box;

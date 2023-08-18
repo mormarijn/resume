@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+3:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+3:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+3:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+3:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
 .mouse .pointer1 {
   z-index: 9999;
   position: absolute;
@@ -177,22 +177,37 @@ h1:after {
 
 .bg-lbem-1 {
   background: rgba(252, 248, 209, 0.25);
+  margin-left: -25px;
+  padding: 5px 25px;
+  width: calc(100% + 50px);
 }
 
 .bg-lbem-2 {
   background: rgba(144, 235, 216, 0.25);
+  margin-left: -25px;
+  padding: 5px 25px;
+  width: calc(100% + 50px);
 }
 
 .bg-lbem-3 {
   background: rgba(232, 136, 136, 0.25);
+  margin-left: -25px;
+  padding: 5px 25px;
+  width: calc(100% + 50px);
 }
 
 .bg-lbem-4 {
   background: rgba(11, 85, 118, 0.25);
+  margin-left: -25px;
+  padding: 5px 25px;
+  width: calc(100% + 50px);
 }
 
 .bg-lbem-5 {
   background: rgba(44, 8, 71, 0.25);
+  margin-left: -25px;
+  padding: 5px 25px;
+  width: calc(100% + 50px);
 }
 
 .clr-lbem-1 {
@@ -213,6 +228,66 @@ h1:after {
 
 .clr-lbem-5 {
   color: #2c0847;
+}
+
+.tag {
+  border-radius: 4px;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 10px;
+  margin: 5px 2.5px;
+  text-transform: lowercase;
+  background-color: #0b5576;
+  color: #fcf8d1;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+  opacity: 0.75;
+}
+.tag:hover {
+  background-color: #fcf8d1;
+  color: #0b5576;
+  border-color: #0b5576;
+  opacity: 1;
+}
+.tag i {
+  font-size: 16px;
+  margin-right: 2px;
+  vertical-align: middle;
+}
+.tag.tag-gender {
+  background-color: #01a6ea;
+  color: white;
+}
+.tag.tag-gender:hover {
+  background-color: white;
+  color: #01a6ea;
+  border-color: #01a6ea;
+}
+.tag.tag-netherlands {
+  background-color: #e17000;
+  color: white;
+}
+.tag.tag-netherlands:hover {
+  background-color: white;
+  color: #e17000;
+  border-color: #e17000;
+}
+.tag.tag-email {
+  background-color: #e88888;
+  color: #2c0847;
+}
+.tag.tag-email:hover {
+  background-color: #2c0847;
+  color: #e88888;
+  border-color: #e88888;
+}
+.tag.tag-email::after {
+  content: "email";
+}
+.tag.tag-email:hover::after {
+  content: "marijngrootjans@gmail.com";
 }
 
 .footer {
@@ -267,6 +342,10 @@ body {
 
 h1, h2, h3, h4 {
   font-family: "Ubuntu", sans-serif;
+}
+
+a, a:visited {
+  text-decoration: none;
 }
 
 i {

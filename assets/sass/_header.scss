@@ -2,8 +2,8 @@
 @import 'variables';
 
 .header {
-    background-color: $colour-lbem-1;
-    border-top: 5px solid $colour-lbem-1d;
+    background-color: $color-lbem-1;
+    border-top: 5px solid $color-lbem-1d;
     height: 50px;
     width: 100%;
     top: 0;
@@ -24,18 +24,18 @@
                 }
 
                 &.m {
-                    fill: $colour-lbem-2;
+                    fill: $color-lbem-2;
 
                     &:hover {
-                        fill: $colour-lbem-2d;
+                        fill: $color-lbem-2d;
                     }
                 }
 
                 &.g {
-                    fill: $colour-lbem-3;
+                    fill: $color-lbem-3;
 
                     &:hover {
-                        fill: $colour-lbem-3d;
+                        fill: $color-lbem-3d;
                     }
                 }
             }

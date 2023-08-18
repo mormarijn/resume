@@ -1,15 +1,15 @@
-@mixin circle-animation($size1, $size2, $colour, $duration) {
+@mixin circle-animation($size1, $size2, $color, $duration) {
     @keyframes animate-circle {
         0% {
             background: transparent;
-            border: 3px solid $colour;
+            border: 3px solid $color;
             width: $size1;
             height: $size1;
         }
 
         100% {
-            background: $colour;
-            border: 0px solid $colour;
+            background: $color;
+            border: 0px solid $color;
             width: $size2;
             height: $size2;
         }
@@ -18,14 +18,14 @@
     @-webkit-keyframes animate-circle {
         0% {
             background: transparent;
-            border: 3px solid $colour;
+            border: 3px solid $color;
             width: $size1;
             height: $size1;
         }
 
         100% {
-            background: $colour;
-            border: 0px solid $colour;
+            background: $color;
+            border: 0px solid $color;
             width: $size2;
             height: $size2;
         }
@@ -34,14 +34,14 @@
     @-moz-keyframes animate-circle {
         0% {
             background: transparent;
-            border: 3px solid $colour;
+            border: 3px solid $color;
             width: $size1;
             height: $size1;
         }
 
         100% {
-            background: $colour;
-            border: 0px solid $colour;
+            background: $color;
+            border: 0px solid $color;
             width: $size2;
             height: $size2;
         }
@@ -55,18 +55,18 @@
     animation-fill-mode: forwards;
 }
 
-@mixin ring-animation($size1, $size2, $colour, $duration) {
+@mixin ring-animation($size1, $size2, $color, $duration) {
     @keyframes animate-ring {
         0% {
-            background: $colour;
-            border: 0px solid $colour;
+            background: $color;
+            border: 0px solid $color;
             width: $size1;
             height: $size1;
         }
 
         100% {
             background: transparent;
-            border: 3px solid $colour;
+            border: 3px solid $color;
             width: $size2;
             height: $size2;
         }
@@ -74,15 +74,15 @@
 
     @-webkit-keyframes animate-ring {
         0% {
-            background: $colour;
-            border: 0px solid $colour;
+            background: $color;
+            border: 0px solid $color;
             width: $size1;
             height: $size1;
         }
 
         100% {
             background: transparent;
-            border: 3px solid $colour;
+            border: 3px solid $color;
             width: $size2;
             height: $size2;
         }
@@ -90,15 +90,15 @@
 
     @-moz-keyframes animate-ring {
         0% {
-            background: $colour;
-            border: 0px solid $colour;
+            background: $color;
+            border: 0px solid $color;
             width: $size1;
             height: $size1;
         }
 
         100% {
             background: transparent;
-            border: 3px solid $colour;
+            border: 3px solid $color;
             width: $size2;
             height: $size2;
         }
@@ -112,25 +112,25 @@
     animation-fill-mode: forwards;
 }
 
-@mixin love-animation($colour) {
+@mixin love-animation($color) {
     @keyframes love {
         to {
             transform: scale(1.2);
-            color: $colour;
+            color: $color;
         }
     }
 
     @-webkit-keyframes love {
         to {
             -webkit-transform: scale(1.2);
-            color: $colour;
+            color: $color;
         }
     }
 
     @-moz-keyframes love {
         to {
             -moz-transform: scale(1.2);
-            color: $colour;
+            color: $color;
         }
     }
 
@@ -139,19 +139,22 @@
     animation: love .5s infinite linear alternate-reverse;
 }
 
-@mixin bg($name, $colour, $alpha) {
+@mixin bg($name, $color, $alpha) {
     .bg-#{$name} {
-        background: rgba($colour, calc($alpha/100));
+        background: rgba($color, calc($alpha/100));
+        margin-left: -$padding-x;
+        padding: $padding-y $padding-x;
+        width: calc(100% + calc(2 * $padding-x));
     }
 }
 
-@mixin clr($name, $colour) {
+@mixin clr($name, $color) {
     .clr-#{$name} {
-        color: $colour;
+        color: $color;
     }
 }
 
-@mixin heading($colour) {
+@mixin heading($color) {
     &:after {
         content: "";
         position: absolute;
@@ -160,7 +163,7 @@
         transform: translateY(-50%) rotate(-9deg);
         width: 18vmin;
         height: 120%;
-        background: $colour;
+        background: $color;
         z-index: -1;
     }
 }

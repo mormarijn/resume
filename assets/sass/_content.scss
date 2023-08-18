@@ -3,7 +3,7 @@
 @import 'mixins';
 
 .content {
-    color: $colour-lbem-5;
+    color: $color-lbem-5;
     height: calc(100% - ($header-height + $footer-height));
     overflow-x: hidden;
     overflow-y: auto;
@@ -14,11 +14,11 @@
     }
 
     &::-webkit-scrollbar-track {
-        background: $colour-lbem-2;
+        background: $color-lbem-2;
     }
 
     &::-webkit-scrollbar-thumb {
-        background: $colour-lbem-3; 
+        background: $color-lbem-3; 
     }
 
     section {
@@ -34,21 +34,21 @@
 }
 
 h1 {
-    color: $colour-lbem-3;
+    color: $color-lbem-3;
     position: relative;
-    @include heading($colour-lbem-2);
+    @include heading($color-lbem-2);
 }
 
 // backgrounds
-@include bg(lbem-1, $colour-lbem-1, $bg-alpha);
-@include bg(lbem-2, $colour-lbem-2, $bg-alpha);
-@include bg(lbem-3, $colour-lbem-3, $bg-alpha);
-@include bg(lbem-4, $colour-lbem-4, $bg-alpha);
-@include bg(lbem-5, $colour-lbem-5, $bg-alpha);
+@include bg(lbem-1, $color-lbem-1, $bg-alpha);
+@include bg(lbem-2, $color-lbem-2, $bg-alpha);
+@include bg(lbem-3, $color-lbem-3, $bg-alpha);
+@include bg(lbem-4, $color-lbem-4, $bg-alpha);
+@include bg(lbem-5, $color-lbem-5, $bg-alpha);
 
-// colours
-@include clr(lbem-1, $colour-lbem-1);
-@include clr(lbem-2, $colour-lbem-2);
-@include clr(lbem-3, $colour-lbem-3);
-@include clr(lbem-4, $colour-lbem-4);
-@include clr(lbem-5, $colour-lbem-5);
+// colors
+@include clr(lbem-1, $color-lbem-1);
+@include clr(lbem-2, $color-lbem-2);
+@include clr(lbem-3, $color-lbem-3);
+@include clr(lbem-4, $color-lbem-4);
+@include clr(lbem-5, $color-lbem-5);
