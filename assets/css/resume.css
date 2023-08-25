@@ -113,6 +113,7 @@
 .header svg.logo {
   margin-top: 19px;
   height: 50px;
+  z-index: 1;
 }
 .header svg.logo g {
   stroke: none;
@@ -154,6 +155,25 @@
   height: calc(100vh - 125px);
   scroll-snap-align: start;
   overflow-x: auto;
+  position: relative;
+  z-index: 0;
+}
+.content section.aboutme {
+  background-image: linear-gradient(43deg, #fcf8d1 0%, #90ebd8 46%, #e88888 100%);
+}
+.content section.aboutme h1 {
+  color: #90ebd8;
+}
+.content section.aboutme h1:after {
+  content: "";
+  position: absolute;
+  left: -1vmin;
+  top: 50%;
+  transform: translateY(-50%) rotate(-7deg);
+  width: 18vmin;
+  height: 120%;
+  background: #e88888;
+  z-index: -1;
 }
 .content section p {
   text-align: justify;
@@ -169,7 +189,7 @@ h1:after {
   position: absolute;
   left: -1vmin;
   top: 50%;
-  transform: translateY(-50%) rotate(-9deg);
+  transform: translateY(-50%) rotate(-7deg);
   width: 18vmin;
   height: 120%;
   background: #90ebd8;
@@ -177,35 +197,35 @@ h1:after {
 }
 
 .bg-lbem-1 {
-  background: rgba(252, 248, 209, 0.25);
+  background: rgba(252, 248, 209, 0.5);
   margin-left: -25px;
   padding: 5px 25px;
   width: calc(100% + 50px);
 }
 
 .bg-lbem-2 {
-  background: rgba(144, 235, 216, 0.25);
+  background: rgba(144, 235, 216, 0.5);
   margin-left: -25px;
   padding: 5px 25px;
   width: calc(100% + 50px);
 }
 
 .bg-lbem-3 {
-  background: rgba(232, 136, 136, 0.25);
+  background: rgba(232, 136, 136, 0.5);
   margin-left: -25px;
   padding: 5px 25px;
   width: calc(100% + 50px);
 }
 
 .bg-lbem-4 {
-  background: rgba(11, 85, 118, 0.25);
+  background: rgba(11, 85, 118, 0.5);
   margin-left: -25px;
   padding: 5px 25px;
   width: calc(100% + 50px);
 }
 
 .bg-lbem-5 {
-  background: rgba(44, 8, 71, 0.25);
+  background: rgba(44, 8, 71, 0.5);
   margin-left: -25px;
   padding: 5px 25px;
   width: calc(100% + 50px);
@@ -234,6 +254,7 @@ h1:after {
 .tags {
   width: calc(100vw - 50px);
   margin-right: 50px;
+  text-align: center;
 }
 
 .tag {
@@ -249,7 +270,7 @@ h1:after {
   color: #fcf8d1;
   border: 2px solid transparent;
   transition: 0.3s ease;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 .tag:hover {
   background-color: #fcf8d1;
@@ -284,16 +305,13 @@ h1:after {
   background-color: #e88888;
   color: #2c0847;
 }
+.tag.tag-email:not(:hover) > i {
+  animation: none;
+}
 .tag.tag-email:hover {
   background-color: #2c0847;
   color: #e88888;
   border-color: #e88888;
-}
-.tag.tag-email::after {
-  content: "email";
-}
-.tag.tag-email:hover::after {
-  content: "marijngrootjans@gmail.com";
 }
 
 .footer {

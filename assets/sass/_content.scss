@@ -26,6 +26,17 @@
         height: calc(100vh - ($header-height + $footer-height + 2 * $padding-y));
         scroll-snap-align: start;
         overflow-x: auto;
+        position: relative;
+        z-index: 0;
+
+        &.aboutme {
+            background-image: linear-gradient(43deg, $color-lbem-1 0%, $color-lbem-2 46%, $color-lbem-3 100%);
+
+            h1 {
+                color: $color-lbem-2;
+                @include heading($color-lbem-3);
+            }
+        }
 
         p {
             text-align: justify;

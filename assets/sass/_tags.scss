@@ -3,6 +3,7 @@
 .tags {
     width: calc(100vw - (2 * $padding-x));
     margin-right: calc(2 * $padding-x);
+    text-align: center;
 }
 
 .tag {
@@ -18,7 +19,7 @@
     color: $color-lbem-1;
     border: 2px solid transparent;
     transition: 0.3s ease;
-    opacity: 0.75;
+    opacity: calc($bg-alpha / 100);
 
     &:hover {
         background-color: $color-lbem-1;
@@ -61,18 +62,14 @@
         background-color: $color-lbem-3;
         color: $color-lbem-5;
 
+        &:not(:hover) > i {
+            animation: none;
+        }
+
         &:hover {            
             background-color: $color-lbem-5;
             color: $color-lbem-3;
-            border-color: $color-lbem-3;
-        }
-
-        &::after {
-            content: 'email';
-        }
-    
-        &:hover::after {
-            content: 'marijngrootjans@gmail.com';
+            border-color: $color-lbem-3;            
         }
     }
 }
