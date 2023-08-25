@@ -21,6 +21,10 @@
     transition: 0.3s ease;
     opacity: calc($bg-alpha / 100);
 
+    &:not(:hover) > i {
+        animation: none;
+    }
+
     &:hover {
         background-color: $color-lbem-1;
         color: $color-lbem-4;
@@ -58,18 +62,34 @@
         }
     }
 
+    &.tag-car {
+        i::before {
+            content: "\f1b9";
+        }
+
+        &:hover {
+            i::before {
+                content: "\f5e4";
+            }
+        }
+    }
+
     &.tag-email {
         background-color: $color-lbem-3;
         color: $color-lbem-5;
 
-        &:not(:hover) > i {
-            animation: none;
+        i::before {
+            content: "\f0e0";
         }
 
         &:hover {            
             background-color: $color-lbem-5;
             color: $color-lbem-3;
-            border-color: $color-lbem-3;            
+            border-color: $color-lbem-3;
+
+            i::before {
+                content: "\f1d8";
+            }
         }
     }
 }
