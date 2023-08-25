@@ -19,7 +19,7 @@
         }
     });
 
-    $("#scroll-to-top").on({
+    $("#scroll-to-top, .logo").on({
         click: function () {
             scrollToTop();
         }

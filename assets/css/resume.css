@@ -118,9 +118,6 @@
 .header svg.logo g {
   stroke: none;
 }
-.header svg.logo g path:hover {
-  cursor: pointer;
-}
 .header svg.logo g path.m {
   fill: #90ebd8;
 }
