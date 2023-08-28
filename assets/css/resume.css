@@ -157,6 +157,7 @@
 }
 .content section.aboutme {
   background-image: linear-gradient(43deg, #fcf8d1 0%, #90ebd8 46%, #e88888 100%);
+  overflow-x: hidden;
 }
 .content section.aboutme h1 {
   color: #90ebd8;
@@ -171,6 +172,14 @@
   height: 120%;
   background: #e88888;
   z-index: -1;
+}
+.content section.aboutme #map {
+  background: rgba(144, 235, 216, 0.5);
+  margin-left: -25px;
+  margin-top: 0;
+  padding-bottom: 10px;
+  width: calc(100% + 50px);
+  height: 25vh;
 }
 .content section p {
   text-align: justify;
@@ -321,6 +330,72 @@ h1:after {
 }
 .tag.tag-email:hover i::before {
   content: "\f1d8";
+}
+.tag.tag-coding i::before {
+  content: "\f121";
+}
+.tag.tag-coding:hover i::before {
+  content: "\f246";
+}
+.tag.tag-dataviz i::before {
+  content: "\f201";
+}
+.tag.tag-dataviz:hover i::before {
+  content: "\f1fe";
+}
+.tag.tag-strava {
+  background-color: #fc5200;
+  color: white;
+}
+.tag.tag-strava i::before {
+  content: "\f70c";
+}
+.tag.tag-strava:hover {
+  background-color: white;
+  color: #fc5200;
+  border-color: #fc5200;
+}
+.tag.tag-strava:hover i::before {
+  content: "\f428";
+}
+.tag.tag-soccer {
+  background-color: #37003c;
+  color: white;
+}
+.tag.tag-soccer:hover {
+  background-color: white;
+  color: #37003c;
+  border-color: #37003c;
+}
+.tag.tag-travel {
+  background-color: #007847;
+  color: #ffb915;
+}
+.tag.tag-travel i::before {
+  content: "\f5b0";
+}
+.tag.tag-travel:hover {
+  background-color: #ffb915;
+  color: #007847;
+  border-color: #007847;
+}
+.tag.tag-travel:hover i::before {
+  content: "\f072";
+}
+.tag.tag-safari {
+  background-color: #545a27;
+  color: #eaeddc;
+}
+.tag.tag-safari i::before {
+  content: "\f1e5";
+}
+.tag.tag-safari:hover {
+  background-color: #eaeddc;
+  color: #545a27;
+  border-color: #545a27;
+}
+.tag.tag-safari:hover i::before {
+  content: "\f6ed";
 }
 
 .footer {

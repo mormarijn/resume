@@ -92,4 +92,102 @@
             }
         }
     }
+
+    &.tag-coding {
+        i::before {
+            content: "\f121";
+        }
+
+        &:hover {
+            i::before {
+                content: "\f246";
+            }
+        }
+    }
+
+    &.tag-dataviz {
+        i::before {
+            content: "\f201";
+        }
+
+        &:hover {
+            i::before {
+                content: "\f1fe";
+            }
+        }
+    }
+
+    &.tag-strava {
+        $color-strava: #fc5200;
+        background-color: $color-strava;
+        color: white;
+
+        i::before {
+            content: "\f70c";
+        }
+
+        &:hover {            
+            background-color: white;
+            color: $color-strava;
+            border-color: $color-strava;
+
+            i::before {
+                content: "\f428";
+            }
+        }
+    }
+
+    &.tag-soccer {
+        $color-pl: #37003c;
+        background-color: $color-pl;
+        color: white;
+
+        &:hover {
+            background-color: white;
+            color: $color-pl;
+            border-color: $color-pl;
+        }
+    }
+
+    &.tag-travel {
+        $color-1: #007847;
+        $color-2: #ffb915;        
+        background-color: $color-1;
+        color: $color-2;
+
+        i::before {
+            content: "\f5b0";
+        }
+
+        &:hover {            
+            background-color: $color-2;
+            color: $color-1;
+            border-color: $color-1;
+
+            i::before {
+                content: "\f072";
+            }
+        }
+    }
+
+    &.tag-safari {
+        $color-1: #545a27;
+        $color-2: #eaeddc;
+        background-color: $color-1;
+        color: $color-2;
+
+        i::before {
+            content: "\f1e5";
+        }
+
+        &:hover {            
+            background-color: $color-2;
+            color: $color-1;
+            border-color: $color-1;
+
+            i::before {
+                content: "\f6ed";
+            }
+        }
+    }
 }
