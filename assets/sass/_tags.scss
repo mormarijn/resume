@@ -74,25 +74,6 @@
         }
     }
 
-    &.tag-email {
-        background-color: $color-lbem-3;
-        color: $color-lbem-5;
-
-        i::before {
-            content: "\f0e0";
-        }
-
-        &:hover {            
-            background-color: $color-lbem-5;
-            color: $color-lbem-3;
-            border-color: $color-lbem-3;
-
-            i::before {
-                content: "\f1d8";
-            }
-        }
-    }
-
     &.tag-coding {
         i::before {
             content: "\f121";

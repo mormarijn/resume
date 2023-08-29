@@ -38,4 +38,50 @@
             }
         }
     }
+
+    .shortcuts {
+        position: absolute;
+        top: calc(3 * $padding-y);
+        right: $padding-x;
+        height: calc(6 * $padding-y);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        a {
+            $space: 4px;
+            border-radius: $space;
+            display: flex;
+            justify-content: center;
+            background-color: $color-lbem-1;
+            color: $color-lbem-5;
+            padding: $space $space;
+            transition: 0.3s ease;     
+            width: 20px;
+            opacity: calc($bg-alpha / 100);
+            
+            &:not(:last-child) {
+                margin-right: calc($space / 2);
+            }
+
+            &:hover {
+                background-color: $color-lbem-5;
+                color: $color-lbem-1;
+                opacity: 1;
+            }
+
+            i {
+                font-size: 20px;
+            }
+
+            &.shortcut-email {                
+                padding-bottom: $space + calc($space / 2);
+                padding-top: $space + calc($space / 2);
+
+                i {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }

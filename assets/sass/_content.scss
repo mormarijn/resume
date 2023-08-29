@@ -30,7 +30,7 @@
         z-index: 0;
 
         &.aboutme {
-            background-image: linear-gradient(43deg, $color-lbem-1 0%, $color-lbem-2 46%, $color-lbem-3 100%);
+            background-image: linear-gradient(43deg, $color-lbem-1 0%, $color-lbem-2 25%, $color-lbem-3 100%);
             overflow-x: hidden;
 
             h1 {
@@ -43,6 +43,9 @@
                 margin-left: -$padding-x;
                 width: calc(100% + calc(2 * $padding-x));
                 height: 25vh;
+                border-bottom: 7px solid;
+                border-image-slice: 1;
+                border-image-source: linear-gradient(to right, $color-lbem-1 0%, $color-lbem-2 25%, $color-lbem-3 100%);
             }
         }
 
