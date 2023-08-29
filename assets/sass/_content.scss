@@ -39,10 +39,8 @@
             }
 
             #map {
-                background: rgba($color-lbem-2, calc($bg-alpha/100));
+                margin-top: -$padding-y;
                 margin-left: -$padding-x;
-                margin-top: 0;
-                padding-bottom: calc(2 * $padding-y);
                 width: calc(100% + calc(2 * $padding-x));
                 height: 25vh;
             }

@@ -174,10 +174,8 @@
   z-index: -1;
 }
 .content section.aboutme #map {
-  background: rgba(144, 235, 216, 0.5);
+  margin-top: -5px;
   margin-left: -25px;
-  margin-top: 0;
-  padding-bottom: 10px;
   width: calc(100% + 50px);
   height: 25vh;
 }
@@ -343,20 +341,20 @@ h1:after {
 .tag.tag-dataviz:hover i::before {
   content: "\f1fe";
 }
-.tag.tag-strava {
+.tag.tag-running {
   background-color: #fc5200;
   color: white;
 }
-.tag.tag-strava i::before {
-  content: "\f70c";
+.tag.tag-running i::before {
+  content: "\f554";
 }
-.tag.tag-strava:hover {
+.tag.tag-running:hover {
   background-color: white;
   color: #fc5200;
   border-color: #fc5200;
 }
-.tag.tag-strava:hover i::before {
-  content: "\f428";
+.tag.tag-running:hover i::before {
+  content: "\f70c";
 }
 .tag.tag-soccer {
   background-color: #37003c;

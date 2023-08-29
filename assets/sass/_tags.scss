@@ -117,13 +117,13 @@
         }
     }
 
-    &.tag-strava {
+    &.tag-running {
         $color-strava: #fc5200;
         background-color: $color-strava;
         color: white;
 
         i::before {
-            content: "\f70c";
+            content: "\f554";
         }
 
         &:hover {            
@@ -132,7 +132,7 @@
             border-color: $color-strava;
 
             i::before {
-                content: "\f428";
+                content: "\f70c";
             }
         }
     }
